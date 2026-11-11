@@ -15,6 +15,7 @@ set(KS_WARNINGS -Wall -Wextra -Wshadow -Wstrict-prototypes -Wmissing-prototypes)
 add_library(kscore STATIC
     src/bytes.c
     src/crc32.c
+    src/pack.c
 )
 target_include_directories(kscore PUBLIC src)
 target_compile_options(kscore PRIVATE ${KS_WARNINGS})

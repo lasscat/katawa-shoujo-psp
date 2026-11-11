@@ -13,6 +13,7 @@ set(KS_WARNINGS -Wall -Wextra -Wshadow -Wstrict-prototypes -Wmissing-prototypes)
 
 # Engine core: portable C99, no SDL, no platform headers. Everything here is unit tested on the host.
 add_library(kscore STATIC
+    src/bytes.c
     src/crc32.c
 )
 target_include_directories(kscore PUBLIC src)

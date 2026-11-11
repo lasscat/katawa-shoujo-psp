@@ -1,0 +1,19 @@
+Licensing of this repository
+============================
+
+The files in this repository (engine source, converter, scripts, documentation) are licensed under
+the Mozilla Public License 2.0. See LICENSE.
+
+Not included here, and not covered by the licence above:
+
+- Katawa Shoujo artwork, music, video, writing and other assets, by Four Leaf Studios, licensed
+  CC BY-NC-ND 3.0. scripts/fetch.sh downloads them from the upstream repository to the builder's own
+  machine, and the converter produces PSP data from them locally. Do not redistribute converted
+  copies of them, and do not use them commercially.
+- The scripts of Katawa Shoujo: Re-Engineered by Fleeting Heartbeat Studios (code MPL-2.0), which
+  the converter reads as input.
+
+Releases of this project contain the engine and the converter only, never game data.
+
+This project is not affiliated with or endorsed by Four Leaf Studios, Fleeting Heartbeat Studios,
+or Sony Interactive Entertainment. "PSP" and "PlayStation" are trademarks of their owner.

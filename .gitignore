@@ -1,0 +1,24 @@
+# Downloaded and generated files
+upstream/
+build/
+build-*/
+dist/
+logs/
+
+# Game data and converted output are never committed
+*.rpa
+*.rpyc
+*.kpk
+*.ksb
+*.PBP
+*.prx
+*.elf
+PARAM.SFO
+
+# Tooling
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+compile_commands.json

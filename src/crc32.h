@@ -10,4 +10,7 @@
  */
 uint32_t ks_crc32(uint32_t crc, const void *data, size_t len);
 
+/* CRC-32 of a zero-terminated string, not counting the terminator. */
+uint32_t ks_crc32_str(const char *text);
+
 #endif

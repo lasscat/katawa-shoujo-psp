@@ -1,5 +1,7 @@
 #include "crc32.h"
 
+#include <string.h>
+
 static uint32_t table[256];
 static int table_ready;
 
@@ -24,4 +26,8 @@ uint32_t ks_crc32(uint32_t crc, const void *data, size_t len) {
         crc = table[(crc ^ p[i]) & 0xFFu] ^ (crc >> 8);
     }
     return ~crc;
+}
+
+uint32_t ks_crc32_str(const char *text) {
+    return ks_crc32(0, text, strlen(text));
 }
